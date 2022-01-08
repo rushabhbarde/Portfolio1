@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar</title>
+        <link rel="stylesheet" href="/navbar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="/Logo.png" alt="logo" href="/navbar.html">
+            <!-- <a class="logo">Hrushabh B</a> -->
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#"><button>Hire Me!</button></a>
+            <a onclick="openNAv()" class="menu" href="#"><button>Menu</button></a>
+        </header>
+        <div id="mobile_menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay_content">
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="/mobile.js"></script>
+    </body>
+</html>
