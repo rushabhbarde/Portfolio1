@@ -8,42 +8,64 @@
         <link rel="stylesheet" href="/navbar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=IBM+Plex+Sans:wght@500&family=Montserrat:wght@500&family=Prosto+One&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+        <style media="screen">
+            .container{
+                overflow-x: hidden;
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: repeat(auto-fit,minmax(800px,1fr));
+                align-items: center;
+            }
+            header{
+                grid-column: 1/-1;
+            }
+            aside{
+                min-width: 1300px;
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <img class="logo" src="/Logo.png" alt="logo" href="/index.html">
-            <!-- <a class="logo">Hrushabh B</a> -->
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="/Services.html">Services</a></li>
-                    <li><a href="/Projects.html">Projects</a></li>
-                    <li><a href="/About.html">About</a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="#"><button>Hire Me!</button></a>
-            <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-        </header>
-        <div id="mobile_menu" class="overlay">
-            <a class="close" onclick="closeNav()">&times;</a>
-            <div class="overlay_content">
-                <a href="/Services.html">Services</a>
-                <a href="/Projects.html">Projects</a>
-                <a href="/About.html">About</a>
+        <div class="container">
+            <header>
+                <img class="logo" src="/Logo.png" alt="logo" href="/index.html">
+                <!-- <a class="logo">Hrushabh B</a> -->
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="/Services.html">Services</a></li>
+                        <li><a href="/Projects.html">Projects</a></li>
+                        <li><a href="/About.html">About</a></li>
+                    </ul>
+                </nav>
                 <a class="cta" href="#"><button>Hire Me!</button></a>
+                <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+            </header>
+            <div id="mobile_menu" class="overlay">
+                <a class="close" onclick="closeNav()">&times;</a>
+                <div class="overlay_content">
+                    <a href="/Services.html">Services</a>
+                    <a href="/Projects.html">Projects</a>
+                    <a href="/About.html">About</a>
+                    <a class="cta" href="#"><button>Hire Me!</button></a>
+                </div>
             </div>
-        </div>
-        <script type="text/javascript" src="/mobile.js"></script>
-        <div class="detel">
-            <h1>Hello, I'm Hrushabh <span id="span1">Barde</span></h1>
-            <p>This is my official portfolio website to showes all 
-                <br>Details and Work Experiance
-            </p>
-            <a href="#">Download CV</a>
-        </div>
-        <div class="images">
-            <img src="/pngaa.png" class="shape">
-            <img src="/Hrushabh.png" class="profile">
+            <script type="text/javascript" src="/mobile.js"></script>
+            <section>
+                <div class="detel">
+                    <h1 id="heading1">Hello, I'm </h1>
+                    <h1 id="heading2">Hrushabh <span id="span1">Barde</span></h1>
+                    <p id="heading3">Student / Web Developer / Front End Developer.</p>
+                    <p id="heading4">I build things for the web. Likes making fun,<br> interactive things with code.
+                    </p>
+                    <a href="#">Download CV</a>
+                </div>
+            </section>
+            <aside> 
+                <div class="images">
+                    <img src="/pngaa.png" class="shape">
+                    <img src="/Hrushabh.png" class="profile">
+                </div>
+            </aside>>
         </div>
     </body>
 </html>
