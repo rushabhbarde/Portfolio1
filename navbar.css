@@ -21,7 +21,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    /* background-color: #24252a; */
+    background-color: #24252a;
 }
 .logo{
     cursor: pointer;
@@ -169,7 +169,7 @@ color: #edf0f1;
     position: absolute;
     bottom: 0;
     right: 100px;
-} 
+}
 .images img{
     height: 100%;
     width: auto;
@@ -187,11 +187,11 @@ color: #edf0f1;
 }
 @media only screen and (max-width:800px){
     .detel{
-        margin-left: 8%;
-        margin-top: 10%;
+        margin-left: 6%;
+        margin-top: 8%;
     }
     .detel h1{
-        font-size: 50px;
+        font-size: 40px;
         color: #edf0f1;
         margin-bottom: 20px;
     }
@@ -207,31 +207,36 @@ color: #edf0f1;
         text-decoration: none;
         font-weight: bold;
         color: #24252A;
-        display: inline-block;
+        /* display: inline-block; */
         margin: 30px 0;
         border-radius: 5px;
     }
+    .images .detel{
+        display: block;
+        float: right;
+    }
     .images{
-        width: auto;
+        /* width: auto; */
         height: 80%;
+        left: 60%;
         position: absolute;
         bottom: 0;
         right: 100px;
-    } 
+    }
     .images img{
-        height: 50%;
+        height: 35%;
         width: auto;
         position: absolute;
-        left: 50%;
+        left: 40%;
         bottom: 0;
         transform: translateX(-50%);
         transition: bottom 1s, left 1s;
     }
     .images:hover .shape{
-        bottom:40px;
+        bottom:10px;
     }
     .images:hover .profile{
-        left: 45%;
+        left: 35%;
     }
     #heading1{
           font-size: 20px;
